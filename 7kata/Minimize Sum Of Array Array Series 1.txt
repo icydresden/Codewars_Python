@@ -1,0 +1,13 @@
+nclude <vector>
+
+using namespace std;
+
+int minSum (vector<int>passed)
+{
+  // your Code Here .... hope you Enjoy !!! 
+  std::sort(passed.begin(),passed.end());
+  int sum=0;
+  for(int i=0;i<passed.size()/2;i++)
+    sum+=passed[i]*passed[passed.size()-1-i];
+  return sum ; 
+}
