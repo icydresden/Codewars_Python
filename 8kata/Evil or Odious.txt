@@ -1,0 +1,5 @@
+std::string evil(int n)
+{
+  std::bitset<32> bits(n);
+  return (bits.count()%2!=0) ? "It's Odious!" : "It's Evil!";
+}

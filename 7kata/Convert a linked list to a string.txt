@@ -1,0 +1,14 @@
+#include <string>
+
+std::string stringify(Node* list)
+{
+    std::string result{};
+    while(list)
+    {
+        result += std::to_string(list->data) + " -> ";
+        list = list->next;
+    }
+    result += "nullptr";
+    
+    return result;
+}

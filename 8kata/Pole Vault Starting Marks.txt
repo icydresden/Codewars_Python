@@ -1,0 +1,12 @@
+#include <cmath>
+double startingMark(double bodyHeight)
+{
+    // Remember: Body height of 1.52 m --> starting mark: 9.45 m
+    //           Body height of 1.83 m --> starting mark: 10.67 m
+    // All other starting marks are based on these guidelines!
+    double temp = (10.67-9.45)*(bodyHeight-1.52)/(1.83-1.52)+9.45;
+    
+    return std::round(temp*100)/100;
+    
+    
+}

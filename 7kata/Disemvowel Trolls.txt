@@ -1,0 +1,12 @@
+# include <string>
+std::string disemvowel(std::string str)
+{
+    // return
+    std::string cpy;
+    for(auto i:str)
+      switch(tolower(i)){
+        case 'a':case'e':case'i':case'u':case'o':break;
+        default: cpy.push_back(i);
+      }
+      return cpy;
+}

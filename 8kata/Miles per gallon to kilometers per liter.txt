@@ -1,0 +1,7 @@
+#include <cmath>
+double converter(int mpg)
+{
+    // do your magic
+    double temp=mpg*1.609344/4.54609188;
+    return round(temp*100)/100;
+}

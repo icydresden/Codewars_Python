@@ -1,0 +1,11 @@
+#include<string>
+std::string howManyDalmatians(int number)
+{
+  std::string str;
+  if(number<=10) str= "Hardly any";
+  else if(number<=50) return "More than a handful!";
+  else if(number<=100) return "Woah that's a lot of dogs!";
+  else if(number=101) return "101 DALMATIONS!!!";
+  else throw std::exception();
+  return str;
+}

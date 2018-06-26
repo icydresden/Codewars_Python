@@ -1,0 +1,12 @@
+#include<vector>
+#include<numeric>
+using namespace std;
+
+int sum(vector<int> numbers)
+{
+    std::vector<int>::iterator highest=std::max_element(numbers.begin(),numbers.end());
+    std::vector<int>::iterator lowest=std::min_element(numbers.begin(),numbers.end());
+    if(numbers.size()<4) return 0;
+    return std::accumulate(numbers.begin(),numbers.end(),0)- *highest - *lowest;
+    
+}

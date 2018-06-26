@@ -1,0 +1,17 @@
+#include <string>
+
+bool isPalindrom (const std::string& str)
+{
+  unsigned int i=0,j=str.size()-1;
+  
+  while(i!=str.size()/2){
+    if(std::tolower(str[i])!=std::tolower(str[j]))  return false;
+    i++;
+    j--;
+    }
+  return true;
+
+// std::string r_str=str;
+// for(auto& i:r_str) i=tolower(i); 
+// return r_str==std::string(r_str.rbegin(),r_str.rend());
+}
